@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomDatePickerDialog" parent="ThemeOverlay.AppCompat.Dialog">
+        <item name="android:textColorPrimary">@color/textColor</item>
+        <item name="android:background">@color/background_nav</item>
+        <item name="colorAccent">@color/textColor</item>
+    </style>
+</resources>

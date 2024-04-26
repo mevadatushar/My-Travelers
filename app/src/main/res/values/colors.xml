@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="background">#ffffff</color>
+    <color name="emoji_background">#A3FFFFFF</color>
+    <color name="background_nav">#ffffff</color>
+    <color name="float_background">#F1F1F1</color>
+    <color name="textColor">#000000</color>
+
+    <color name="red">#FF0000</color> <!-- Red -->
+    <color name="cancelButtonColor">#008CBA</color> <!-- Blue -->
+    <color name="radio_button_tint">#EB44B72F</color>
+    <color name="green">#EB44B72F</color>
+    <color name="light_green">#c1f0a4</color>
+
+
+
+</resources>

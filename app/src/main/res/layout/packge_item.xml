@@ -1,0 +1,157 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lnrdetails"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="@color/background"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:cardElevation="@dimen/_2sdp"
+            app:cardMaxElevation="@dimen/_2sdp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:id="@+id/llPackageDetails"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="@dimen/_90sdp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imgfirstimage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop" />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/txtPlace"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textColor"
+                        android:text="Title"
+                        android:fontFamily="@font/semobold"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:layout_marginVertical="@dimen/_3sdp"
+                        android:textSize="@dimen/_15ssp"
+                         />
+
+                    <TextView
+                        android:id="@+id/txtDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/textColor"
+                        android:text="Description"
+                        android:fontFamily="@font/regular"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:layout_marginVertical="@dimen/_2sdp"
+                        android:textSize="@dimen/_8ssp"
+                        android:singleLine="true"
+                         />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:layout_marginVertical="@dimen/_3sdp"
+                        android:backgroundTint="@color/black">
+
+                        <TextView
+                            android:id="@+id/txtDays"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/textColor"
+                            android:text="Day's - "
+                            android:fontFamily="@font/semobold"
+                            android:textSize="@dimen/_8ssp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:layout_marginVertical="@dimen/_3sdp"
+                        android:orientation="horizontal">
+
+                        <!--                    <TextView-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:text="Description :- "-->
+                        <!--                        android:textColor="@color/black"-->
+                        <!--                        android:layout_gravity="center"-->
+                        <!--                        android:textSize="@dimen/_8ssp"-->
+                        <!--                        android:textStyle="bold" />-->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+
+                            <!--                        <TextView-->
+                            <!--                            android:id="@+id/txtNotes"-->
+                            <!--                            android:layout_width="0dp"-->
+                            <!--                            android:layout_height="wrap_content"-->
+                            <!--                            android:layout_weight="1"-->
+                            <!--                            android:textColor="@color/black"-->
+                            <!--                            android:textSize="@dimen/_8ssp"-->
+                            <!--                            android:singleLine="true"-->
+                            <!--                            android:textStyle="bold" />-->
+
+                            <TextView
+                                android:id="@+id/txtPrice"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/textColor"
+                                android:textSize="@dimen/_8ssp"
+                                android:text="Price"
+                                android:fontFamily="@font/semobold" />
+
+                            <ImageButton
+                                android:id="@+id/imgPackageInfo"
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_margin="@dimen/_5sdp"
+                                android:background="@drawable/next"
+                                android:layout_gravity="center"
+                                android:backgroundTint="@color/textColor" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>

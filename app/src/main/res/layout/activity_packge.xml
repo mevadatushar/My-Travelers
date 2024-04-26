@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".Activity.PackageActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:keyboardNavigationCluster="false"
+        android:isScrollContainer="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_20sdp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageSwitcher
+                        android:id="@+id/imgSwitcher"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_150sdp"
+                        >
+                    </ImageSwitcher>
+
+                    <ImageButton
+                        android:id="@+id/left"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:layout_gravity="start|bottom"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:visibility="gone"
+                        android:background="@drawable/left" />
+
+                    <ImageButton
+                        android:id="@+id/right"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:layout_gravity="end|bottom"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:visibility="gone"
+                        android:background="@drawable/next" />
+
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text=""
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/_10sdp"
+                    android:fontFamily="@font/regular" />
+
+                <TextView
+                    android:id="@+id/txtUploadImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginVertical="@dimen/_10sdp"
+                    android:fontFamily="@font/semobold"
+                    android:text="Uplode Image's"
+                    android:textAlignment="center"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/_13sdp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llLocation"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_7sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/marker"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:fontFamily="@font/semobold"
+                    android:text="Select Place Location"
+                    android:layout_gravity="center"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/_13sdp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_7sdp"
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_7sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:fontFamily="@font/semobold"
+                    android:text="Place"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/_13sdp" />
+
+                <EditText
+                    android:id="@+id/edtEnterPlace"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginVertical="@dimen/_8sdp"
+                    android:background="@drawable/textinputborder"
+                    android:fontFamily="@font/regular"
+                    android:hint="Enter Your Place "
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/_13sdp"
+                    android:textColor="@color/textColor"
+                    android:textColorHint="@color/textColor"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_7sdp"
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_7sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:fontFamily="@font/semobold"
+                    android:text="Price"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/_13sdp" />
+
+                <EditText
+                    android:id="@+id/edtEnterPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginVertical="@dimen/_8sdp"
+                    android:background="@drawable/textinputborder"
+                    android:fontFamily="@font/regular"
+                    android:hint="Enter Your Price "
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/_13sdp"
+                    android:textColor="@color/textColor"
+                    android:textColorHint="@color/textColor"
+                    android:textSize="@dimen/_10sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_7sdp"
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_7sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:fontFamily="@font/semobold"
+                    android:text="Day's"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/_13sdp" />
+
+                <EditText
+                    android:id="@+id/edtEnterDays"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginVertical="@dimen/_8sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:background="@drawable/textinputborder"
+                    android:fontFamily="@font/regular"
+                    android:hint="Enter Your Day's "
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/_13sdp"
+                    android:textColor="@color/textColor"
+                    android:textColorHint="@color/textColor"
+                    android:textSize="@dimen/_10sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_7sdp"
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_7sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:fontFamily="@font/semobold"
+                    android:text="Mobile Number"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/_13sdp" />
+
+                <EditText
+                    android:id="@+id/edtEnterMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginVertical="@dimen/_8sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:background="@drawable/textinputborder"
+                    android:fontFamily="@font/regular"
+                    android:hint="Enter Your Mobile Number "
+                    android:maxLength="10"
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/_13sdp"
+                    android:textColor="@color/textColor"
+                    android:textColorHint="@color/textColor"
+                    android:textSize="@dimen/_10sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_7sdp"
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_7sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:fontFamily="@font/semobold"
+                    android:text="Description"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/_13sdp" />
+
+                <EditText
+                    android:id="@+id/edtEnterDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginVertical="@dimen/_8sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:background="@drawable/textinputborder"
+                    android:fontFamily="@font/regular"
+                    android:hint="Enter Your Description"
+                    android:paddingLeft="@dimen/_13sdp"
+                    android:textColor="@color/textColor"
+                    android:textColorHint="@color/textColor"
+                    android:textSize="@dimen/_10sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:gravity="center"
+                android:layout_marginVertical="@dimen/_20sdp">
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="@dimen/_280sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:backgroundTint="#EB44B72F"
+                    android:fontFamily="@font/semobold"
+                    android:text="Submit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15ssp" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

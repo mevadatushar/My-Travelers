@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/_30sdp">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/cvProfile"
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="@dimen/_70sdp"
+                        android:layout_marginVertical="@dimen/_10sdp"
+                        android:src="@drawable/travellogo"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/txtUsername"
+                        android:textAlignment="center"
+                        android:layout_marginVertical="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/semobold"
+                        android:text="User Name"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/_10ssp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtEmail"
+                        android:layout_marginVertical="@dimen/_3sdp"
+                        android:textAlignment="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/regular"
+                        android:text="User Email"
+                        android:textStyle="bold"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/_12ssp" />
+
+
+                    <TextView
+                        android:id="@+id/txtUserType"
+                        android:textAlignment="center"
+                        android:layout_marginVertical="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/regular"
+                        android:text="User Type"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/_10ssp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:background="@color/black" />
+
+            <LinearLayout
+                android:id="@+id/txtHome"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:background="@drawable/nav_border"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_25sdp"
+                    android:fontFamily="@font/semobold"
+                    android:text="Home"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/txtPrivacy"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:background="@drawable/nav_border"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_25sdp"
+                    android:fontFamily="@font/semobold"
+                    android:text="Privacy Policy"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/txtRate"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:background="@drawable/nav_border"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_25sdp"
+                    android:fontFamily="@font/semobold"
+                    android:text="Rate The App"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/txtShare"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/_35sdp"-->
+<!--                android:layout_marginLeft="@dimen/_15sdp"-->
+<!--                android:layout_marginVertical="@dimen/_5sdp"-->
+<!--                android:background="@drawable/nav_border"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="@dimen/_25sdp"-->
+<!--                    android:fontFamily="@font/semobold"-->
+<!--                    android:text="Share With Friend's"-->
+<!--                    android:textColor="@color/textColor"-->
+<!--                    android:textSize="@dimen/_12ssp"-->
+<!--                    android:textStyle="bold" />-->
+<!--            </LinearLayout>-->
+
+            <LinearLayout
+                android:onClick="logout"
+                android:id="@+id/llLogOut"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:background="@drawable/nav_border"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_25sdp"
+                    android:fontFamily="@font/semobold"
+                    android:text="Log Out"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

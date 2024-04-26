@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="20dp"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardMaxElevation="12dp"
+            app:cardPreventCornerOverlap="true"
+
+            >
+            <ImageView
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_90sdp"
+                android:src="@drawable/travellogo" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/semobold"
+            android:text="My Traveler's"
+            android:textColor="@color/textColor"
+            android:textAlignment="center"
+            android:textSize="@dimen/_15sdp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|bottom"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp"
+        android:layout_alignParentBottom="true">
+
+        <!-- Version Name TextView -->
+        <TextView
+            android:id="@+id/txtVersionNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:fontFamily="@font/semobold"
+            android:text="Version Name: YourVersionName"
+            android:textAlignment="center"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/_7ssp"
+            android:textStyle="bold" />
+
+        <!-- Version Code TextView -->
+        <TextView
+            android:id="@+id/txtVersionCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/semobold"
+            android:text="Version Code: YourVersionCode"
+            android:textAlignment="center"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/_7ssp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+plugins {
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.jetbrains.kotlin.android)
+
+    // Add the Google services Gradle plugin
+    id 'com.google.gms.google-services'
+    alias(libs.plugins.google.android.libraries.mapsplatform.secrets.gradle.plugin)
+
+}
+
+android {
+    namespace 'com.example.mytravelers'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.mytravelers"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        viewBinding = true
+    }
+}
+
+dependencies {
+
+    implementation libs.androidx.core.ktx
+    implementation libs.androidx.appcompat
+    implementation libs.material
+    implementation libs.androidx.activity
+    implementation libs.androidx.constraintlayout
+    implementation libs.firebase.auth.ktx
+    implementation libs.play.services.auth
+    implementation libs.play.services.maps
+    implementation libs.firebase.perf.ktx
+    testImplementation libs.junit
+    androidTestImplementation libs.androidx.junit
+    androidTestImplementation libs.androidx.espresso.core
+    //ssp
+    implementation 'com.intuit.ssp:ssp-android:1.1.0'
+    //sdp
+    implementation 'com.intuit.sdp:sdp-android:1.1.0'
+    //Card View
+    implementation("com.google.android.material:material:1.2.1")
+    //Circle View
+    implementation(libs.circleimageview)
+    //Glide
+    implementation("com.github.bumptech.glide:glide:4.16.0")
+    //    firebase
+    implementation(platform("com.google.firebase:firebase-bom:32.7.4"))
+    implementation("com.google.firebase:firebase-analytics")
+//    Authentication
+    implementation("com.google.firebase:firebase-auth")
+//    Glide
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+//    facebook login
+    implementation 'com.facebook.android:facebook-login:latest.release'
+//    RealTime Database
+    implementation("com.google.firebase:firebase-database")
+//storage
+    implementation 'com.google.firebase:firebase-storage:20.3.0'
+    //GSON
+    implementation libs.gson
+    //place
+    implementation(libs.places)
+
+    //RAZOR PAY
+    implementation 'com.razorpay:checkout:1.6.33'
+
+
+    //Firebase Cloud Messaging
+    implementation libs.firebase.messaging
+
+}

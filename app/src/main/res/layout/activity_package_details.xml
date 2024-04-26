@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".Activity.PackageDetailsActivity">
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_175sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        android:layout_margin="@dimen/_10sdp">
+
+            <androidx.viewpager.widget.ViewPager
+            android:scaleType="center"
+            android:id="@+id/vpPackageImages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/travellogo"/>
+
+
+    </androidx.cardview.widget.CardView>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$ 100000/-"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/_13sdp"
+                    android:gravity="center"
+                    android:fontFamily="@font/semobold"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right">
+
+                    <TextView
+                        android:id="@+id/txtDays"
+                        android:layout_gravity="right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/semobold"
+                        android:text="10 Day's"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/_13sdp" />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:id="@+id/txtPlace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="India"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/_14sdp"
+                    android:gravity="center"
+                    android:fontFamily="@font/semobold"/>
+
+                <LinearLayout
+                    android:id="@+id/llMap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/regular"
+                        android:text="Location"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                    <ImageView
+                        android:id="@+id/imgLocation"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_gravity="right"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:src="@drawable/marker"
+                        app:tint="@color/textColor" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="@dimen/_13sdp"
+                    android:layout_height="@dimen/_13sdp"
+                    android:src="@drawable/phone"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    app:tint="@color/textColor" />
+
+                <TextView
+                    android:id="@+id/txtMobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+91 9876543210"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/semobold"/>
+
+
+
+
+            </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/_12sdp"
+            android:fontFamily="@font/regular"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/fbBook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:layout_margin="@dimen/_15sdp"
+                android:backgroundTint="@color/float_background"
+                android:text="Book Now"
+                android:textColor="@color/textColor"
+                app:iconSize="@dimen/_20sdp"
+                app:iconTint="@color/textColor"
+                />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+
+
+
+</LinearLayout>

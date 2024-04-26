@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Activity.DashboardActivity"
+    tools:openDrawer="end">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp">
+
+            <ImageView
+                android:id="@+id/imgMenu"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="20dp"
+                android:src="@drawable/menu"
+                app:tint="@color/textColor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_45sdp"
+                android:orientation="vertical" />
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/loutcontainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" />
+
+        <!-- Floating Action Button -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/_20sdp"
+            android:elevation="@dimen/_100sdp"
+            android:importantForAccessibility="no"
+            android:src="@drawable/baseline_add_24"
+            app:backgroundTint="@color/float_background"
+            app:fabSize="normal" />
+
+    </FrameLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/background_nav"
+        app:headerLayout="@layout/nav_header" />
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

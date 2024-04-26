@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">My Travelers</string>
+    <string name="hi_welcome_back">Hi, Welcome Back</string>
+    <string name="terms_of_service"><![CDATA["Terms_of_Service &\n "]]></string>
+
+    <string name="facebook_app_id">726106229684441</string>
+    <string name="fb_login_protocol_scheme">fb1234</string>
+    <string name="facebook_client_token">f192b24fd43905f17432e1652b44fff5</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="google_map_apikey">AIzaSyAESn7BVZlyhZrA7LXAPgLJ1GN3HybQa4E</string>
+
+
+</resources>
