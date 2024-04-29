@@ -29,7 +29,7 @@
             android:layout_height="wrap_content"
             android:text="No"
             android:fontFamily="@font/semobold"
-            android:textColor="@color/textColor"
+            android:textColor="@color/black"
             android:backgroundTint="@color/light_green" />
 
         <Button
@@ -40,6 +40,6 @@
             android:layout_height="wrap_content"
             android:text="Yes"
             android:fontFamily="@font/semobold"
-            android:textColor="@color/textColor"/>
+            android:textColor="@color/white"/>
     </LinearLayout>
 </LinearLayout>

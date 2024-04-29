@@ -285,34 +285,24 @@ class SignupActivity : AppCompatActivity() {
     // Upload image to Firebase Storage
     private fun uploadImage() {
         if (filePath != null) {
-
-            // Code for showing progressDialog while uploading
             val progressDialog = ProgressDialog(this)
             progressDialog.setTitle("Uploading...")
             progressDialog.show()
 
-            // Define the filename as the username
             val filename = binding.edtEnterUsername.text.toString()
-
-            // Define the child of storageReference with the filename
             val ref = storageReference.child("images/$filename")
 
-            // Adding listeners on upload or failure of image
             ref.putFile(filePath!!)
                 .addOnSuccessListener { taskSnapshot ->
-                    // Image uploaded successfully
-                    // Dismiss dialog
                     progressDialog.dismiss()
                     Toast.makeText(this, "Image Uploaded!!", Toast.LENGTH_SHORT).show()
                     Log.d(TAG, "Uploading image")
                 }
                 .addOnFailureListener { e ->
-                    // Error, Image not uploaded
                     progressDialog.dismiss()
                     Toast.makeText(this, "Failed " + e.message, Toast.LENGTH_SHORT).show()
                 }
                 .addOnProgressListener { taskSnapshot ->
-                    // Progress Listener for loading percentage on the dialog box
                     val progress = 100.0 * taskSnapshot.bytesTransferred / taskSnapshot.totalByteCount
                     progressDialog.setMessage("Uploaded " + progress.toInt() + "%")
                 }

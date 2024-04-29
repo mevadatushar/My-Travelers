@@ -244,8 +244,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_50sdp"
                 android:layout_marginHorizontal="@dimen/_10sdp"
-                android:layout_marginVertical="@dimen/_13sdp"
-
+                android:layout_marginVertical="@dimen/_10sdp"
                 android:layout_marginBottom="@dimen/_15sdp"
                 android:gravity="center">
 
